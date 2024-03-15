@@ -130,6 +130,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400&amp;display=swap"
     data-tag="font" />
   <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./components/timeline.css" />
 </head>
 
 <body>
@@ -149,24 +150,6 @@
             <span class="home-text-open-deli-mobile">OpenDeli: Community-centered Gig Work Platforms</span>
           </div>
           <div data-thq="thq-navbar-nav" data-role="Nav" class="home-desktop-menu">
-            <!-- <nav class="home-links">
-              <a href="#Restaurant" class="home-link button">
-                <span>For Restaurants</span>
-              </a>
-              <a href="#Driver" class="home-link1 button">
-                <span>
-                  <span>For Couriers</span>
-                  <br />
-                </span>
-              </a>
-              <a href="#Customers" class="home-link2 button">
-                <span>
-                  <span>For Consumers</span>
-                  <br />
-                </span>
-              </a>
-              <button class="home-button button">Menu</button>
-            </nav> -->
             <nav class="home-links">
               <a href="#Overview" class="home-link button">
                 <span>Project Overview</span>
@@ -250,45 +233,102 @@
           <span class="home-text13">Conteact Us</span>
         </a>
       </section>
-      <section class="home-improve">
-        <!-- <div class="home-heading">
-          <h2 class="home-text14">
-            <span>More choice. More flexibility. More freedom.</span>
-            <br />
-          </h2>
-          <p class="home-text17">
-            <span>
-              Our system provides a fair and open alternative that’s
-              federated. Local businesses can break away from unfair
-              treatment, excessive fees and have complete control over who
-              they work with. With OpenDeli, local businesses set up shop on
-              their terms in their best interests.
-            </span>
-            <br />
-          </p>
-        </div> -->
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="circle"></div>
-            <a href="https://example.com/link1" target="_blank">Node 1</a>
+      <section class="home-roadmap cd-h-timeline js-cd-h-timeline margin-bottom-md cd-h-timeline--loaded">
+        <div class="cd-h-timeline__container timeline-container">
+          <div class="cd-h-timeline__dates">
+            <div class="cd-h-timeline__line">
+              <ol>
+                <li><a href="#0" data-date="16/01/2014"
+                    class="cd-h-timeline__date cd-h-timeline__date--selected timeline-first">Understand</a></li>
+                <li><a href="#0" data-date="28/02/2014"
+                    class="cd-h-timeline__date">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Design&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                </li>
+                <li><a href="#0" data-date="20/04/2014" class="cd-h-timeline__date">&nbsp;Implement&nbsp;</a></li>
+                <li><a href="#0" data-date="20/05/2014"
+                    class="cd-h-timeline__date">&nbsp;&nbsp;&nbsp;&nbsp;Deploy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                </li>
+                <li><a href="#0" data-date="09/07/2014" class="cd-h-timeline__date">Research&nbsp;&nbsp;</a></li>
+              </ol>
+              <span class="cd-h-timeline__filling-line" aria-hidden="true"></span>
+            </div>
           </div>
-          <div class="timeline-item">
-            <div class="circle"></div>
-            <a href="https://example.com/link2" target="_blank">Node 2</a>
-          </div>
-          <div class="timeline-item">
-            <div class="circle"></div>
-            <a href="https://example.com/link3" target="_blank">Node 3</a>
-          </div>
-          <div class="timeline-item">
-            <div class="circle"></div>
-            <a href="https://example.com/link4" target="_blank">Node 4</a>
-          </div>
-          <div class="timeline-item">
-            <div class="circle"></div>
-            <a href="https://example.com/link5" target="_blank">Node 5</a>
-          </div>
+          <ul>
+            <li><a href="#0"
+                class="text-replace cd-h-timeline__navigation cd-h-timeline__navigation--prev cd-h-timeline__navigation--inactive">Prev</a>
+            </li>
+            <li><a href="#0" class="text-replace cd-h-timeline__navigation cd-h-timeline__navigation--next">Next</a>
+            </li>
+          </ul>
         </div>
+        <div class="cd-h-timeline__events">
+          <ol>
+            <li class="cd-h-timeline__event cd-h-timeline__event--selected text-component">
+              <div class="cd-h-timeline__event-content container">
+                <h2 class="cd-h-timeline__event-title">Horizontal Timeline</h2>
+                <em class="cd-h-timeline__event-date">January 16th, 2014</em>
+                <p class="cd-h-timeline__event-description color-contrast-medium">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae
+                  ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta
+                  consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia
+                  pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                </p>
+              </div>
+            </li>
+            <li class="cd-h-timeline__event text-component">
+              <div class="cd-h-timeline__event-content container">
+                <h2 class="cd-h-timeline__event-title">Event title here</h2>
+                <em class="cd-h-timeline__event-date">February 28th, 2014</em>
+                <p class="cd-h-timeline__event-description color-contrast-medium">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae
+                  ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta
+                  consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia
+                  pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                </p>
+              </div>
+            </li>
+
+            <li class="cd-h-timeline__event text-component">
+              <div class="cd-h-timeline__event-content container">
+                <h2 class="cd-h-timeline__event-title">Event title here</h2>
+                <em class="cd-h-timeline__event-date">March 20th, 2014</em>
+                <p class="cd-h-timeline__event-description color-contrast-medium">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae
+                  ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta
+                  consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia
+                  pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                </p>
+              </div>
+            </li>
+
+            <li class="cd-h-timeline__event text-component">
+              <div class="cd-h-timeline__event-content container">
+                <h2 class="cd-h-timeline__event-title">Event title here</h2>
+                <em class="cd-h-timeline__event-date">May 20th, 2014</em>
+                <p class="cd-h-timeline__event-description color-contrast-medium">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae
+                  ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta
+                  consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia
+                  pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                </p>
+              </div>
+            </li>
+
+            <li class="cd-h-timeline__event text-component">
+              <div class="cd-h-timeline__event-content container">
+                <h2 class="cd-h-timeline__event-title">Event title here</h2>
+                <em class="cd-h-timeline__event-date">July 9th, 2014</em>
+                <p class="cd-h-timeline__event-description color-contrast-medium">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae
+                  ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta
+                  consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia
+                  pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                </p>
+              </div>
+            </li>
+
+          </ol>
+        </div>
+
 
       </section>
       <section class="home-services">
@@ -593,6 +633,10 @@
     </div>
   </div>
   <script data-section-id="navbar" src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+  <script src="components/js/util.js"></script>
+  <script src="components/js/swipe.js"></script>
+  <script src="components/js/timeline.js"></script>
+
 </body>
 
 </html>
