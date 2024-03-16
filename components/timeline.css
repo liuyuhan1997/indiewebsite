@@ -3,16 +3,16 @@
     --cd-color-1-h: 0;
     --cd-color-1-s: 0%;
     --cd-color-1-l: 22%;
-    --cd-color-2: hsl(135, 27%, 29%);
-    --cd-color-2-h: 135;
-    --cd-color-2-s: 27%;
-    --cd-color-2-l: 29%;
+    --cd-color-2: hsl(136, 30%, 53%);
+    --cd-color-2-h: 136;
+    --cd-color-2-s: 30%;
+    --cd-color-2-l: 53%;
     --cd-color-3: hsl(0, 0%, 97%);
     --cd-color-3-h: 0;
     --cd-color-3-s: 0%;
     --cd-color-3-l: 97%;
-    --font-primary: 'Fira Sans', sans-serif;
-    --font-secondary: 'Playfair Display', serif
+    --font-primary: 'lora';
+    --font-secondary: 'lato'
 }
 
 ol,
@@ -27,7 +27,6 @@ ul {
     margin-right: auto
 }
 
-.timeline-first {}
 
 .home-roadmap .cd-h-timeline {
     opacity: 0;
@@ -41,7 +40,7 @@ ul {
 .home-roadmap .cd-h-timeline__container {
     position: relative;
     height: 100px;
-    max-width: 1000px
+    max-width: 1000px;
 }
 
 .home-roadmap .cd-h-timeline__dates {
@@ -234,7 +233,7 @@ ul {
     position: relative;
     width: 100%;
     overflow: hidden;
-    transition: height .4s
+    /* transition: height .4s */
 }
 
 .home-roadmap .cd-h-timeline__event {
@@ -281,7 +280,7 @@ ul {
 }
 
 .home-roadmap .cd-h-timeline__event-content {
-    max-width: 800px
+    max-width: 1280px
 }
 
 .home-roadmap .cd-h-timeline__event-title {
@@ -290,8 +289,7 @@ ul {
     font-family: 'Playfair Display', serif;
     font-family: var(--font-secondary);
     font-weight: 700;
-    font-size: 2.48832em;
-    font-size: var(--text-xxxl)
+    font-size: 2em;
 }
 
 .home-roadmap .cd-h-timeline__event-date {

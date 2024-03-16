@@ -695,7 +695,8 @@
   max-width: var(--dl-size-size-maxwidth);
   align-items: flex-start;
   padding-left: var(--dl-space-space-oneandhalfunits);
-  margin-bottom: var(--dl-space-space-fiveunits);
+  padding-bottom: var(--dl-space-space-fourunits);
+  padding-top: var(--dl-space-space-fourunits);
   padding-right: var(--dl-space-space-oneandhalfunits);
   flex-direction: column;
 }
@@ -1377,6 +1378,15 @@
     padding-bottom: var(--dl-space-space-twounits);
   }
 
+  .home-services {
+    gap: var(--dl-space-space-unit);
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+
+
   .home-text10 {
     font-size: 22px;
     text-align: center;
@@ -1782,6 +1792,26 @@
 }
 
 .home-roadmap {
-  padding-top: 100px;
-  width: 920px;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.paper-link {
+  color: var(--dl-color-green-500);
+  text-decoration: none;
+  border-bottom: 1px dotted;
+}
+
+.paper-title {
+  padding-top: 1.2em;
+  color: var(--dl-color-green-500);
+  font-size: 1.2em;
+  font-family: lato;
+  font-weight: 800;
+}
+
+.home-roadmap .highlight-word {
+  color: var(--dl-color-green-500);
+  font-family: lato;
+  font-size: 1.2em;
 }

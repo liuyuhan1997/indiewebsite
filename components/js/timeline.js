@@ -1,7 +1,6 @@
 (function () {
     // Horizontal Timeline - by CodyHouse.co
     var HorizontalTimeline = function (element) {
-        console.log("js exe");
         this.element = element;
         this.datesContainer = this.element.getElementsByClassName('cd-h-timeline__dates')[0];
         this.line = this.datesContainer.getElementsByClassName('cd-h-timeline__line')[0]; // grey line in the top timeline section
@@ -32,7 +31,7 @@
         var left = -120;
         for (var i = 0; i < timeline.dateValues.length; i++) {
             var j = (i == 0) ? 0 : i - 1;
-            var distance = daydiff(timeline.dateValues[j], timeline.dateValues[i]),
+            var distance = daydiff(timeline.dateValues[j], timeline.dateValues[i]) * 40,
                 distanceNorm = (Math.round(distance / timeline.minLapse) + 2) * timeline.eventsMinDistance;
 
             if (distanceNorm < timeline.eventsMinDistance) {
@@ -46,7 +45,7 @@
 
         // set line/filling line dimensions
         // timeline.line.style.width = (left + timeline.eventsMinDistance) + 'px';
-        timeline.line.style.width = '100%';
+        timeline.line.style.width = (left + timeline.eventsMinDistance + 40) + 'px';
         timeline.lineLength = left + timeline.eventsMinDistance;
         // reveal timeline
         Util.addClass(timeline.element, 'cd-h-timeline--loaded');
@@ -102,9 +101,9 @@
     function translateTimeline(timeline, direction) { // translate timeline (and date elements)
         var containerWidth = timeline.datesContainer.offsetWidth;
         if (direction) {
-            timeline.translate = (direction == 'next') ? timeline.translate - containerWidth + timeline.eventsMinDistance : timeline.translate + containerWidth - timeline.eventsMinDistance;
+            timeline.translate = (direction == 'next') ? timeline.translate - containerWidth + timeline.eventsMinDistance - 40 : timeline.translate + containerWidth - timeline.eventsMinDistance - 40;
         }
-        if (0 - timeline.translate > timeline.lineLength - containerWidth) timeline.translate = containerWidth - timeline.lineLength;
+        if (0 - timeline.translate > timeline.lineLength - containerWidth) timeline.translate = containerWidth - timeline.lineLength - 40;
         if (timeline.translate > 0) timeline.translate = 0;
 
         timeline.line.style.transform = 'translateX(' + timeline.translate + 'px)';
@@ -146,7 +145,7 @@
         if (timeline.newDateIndex != timeline.oldDateIndex) {
             Util.removeClass(timeline.content[timeline.oldDateIndex], 'cd-h-timeline__event--selected');
             Util.addClass(timeline.content[timeline.oldDateIndex], classLeaving);
-            timeline.contentWrapper.style.height = timeline.content[timeline.newDateIndex].offsetHeight + 'px';
+            timeline.contentWrapper.style.height = timeline.content[timeline.newDateIndex].offsetHeight + 30 + 'px';
         }
     };
 
