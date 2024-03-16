@@ -1815,3 +1815,11 @@
   font-family: lato;
   font-size: 1.2em;
 }
+
+.home-team {
+  display: flex;
+  width: 100%;
+  columns: auto;
+  align-items: flex-start;
+  flex-direction: row;
+}
